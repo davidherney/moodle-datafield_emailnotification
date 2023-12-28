@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2023122800.01;
+$plugin->version   = 2023122801;
 $plugin->requires  = 2021051708;
 $plugin->component = 'datafield_emailnotification';

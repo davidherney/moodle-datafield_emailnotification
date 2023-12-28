@@ -27,6 +27,6 @@ $string['fieldtypelabel'] = 'Email notification';
 
 $string['emailnotdisplaybrowse'] = 'This data base has already enabled the email notification';
 $string['emailnotificationtext'] = 'It will be sent an email notification informing about the insertion/update of this record in the data base';
-$string['emailnotregisterbd'] = 'Record in the data base';
+$string['emailnotregisterbd'] = 'Record in the data base {$a}';
 $string['message'] = 'Message';
 $string['message_help'] = 'Message to be sent in the email notification. Use the key [link] to include the link to the record.';

@@ -16,5 +16,5 @@ GIT: https://github.com/davidherney/moodle-datafield_emailnotification
 
 IN VERSION
 =============
-2023122800:
-Created as a public version.
+2023122801:
+Created as a public component.

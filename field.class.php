@@ -80,12 +80,13 @@ class data_field_emailnotification extends data_field_base {
 
             if (is_array($users)) {
                 $url = $CFG->wwwroot . '/mod/data/view.php?d=' . $data->id . '&rid=' . $recordid;
-                $subject = get_string('emailnotregisterbd', 'datafield_emailnotification') . $data->name;
+                $subject = get_string('emailnotregisterbd', 'datafield_emailnotification', $data->name);
                 $messagehtml = str_replace('[link]', '<a href="' . $url . '">' . $url . '</a>', $this->field->param2);
                 $messagetext = strip_tags($messagehtml);
+                $noreplyuser = core_user::get_noreply_user();
 
                 foreach ($users as $user) {
-                    email_to_user($user, null, $subject, $messagetext, $messagehtml);
+                    email_to_user($user, $noreplyuser, $subject, $messagetext, $messagehtml);
                 }
             }
         }

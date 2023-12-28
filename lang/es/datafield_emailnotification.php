@@ -27,6 +27,6 @@ $string['fieldtypelabel'] = 'Notificación de correo electrónico';
 
 $string['emailnotdisplaybrowse'] = 'Esta base de datos tiene activa la notificación por correo electrónico';
 $string['emailnotificationtext'] = 'Se enviará una notificación por correo de la inserción/modificación de este registro';
-$string['emailnotregisterbd'] = 'Registro en base de datos';
+$string['emailnotregisterbd'] = 'Registro en base de datos {$a}';
 $string['message'] = 'Mensaje';
 $string['message_help'] = 'Mensaje a enviar en la notificación por correo. Use la expresión [link] para incluir el enlace al registro.';
