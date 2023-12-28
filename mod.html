@@ -31,7 +31,7 @@ function emailnotification_load_users_ids(select_list) {
           <?php
 	    	global $course;
 	    	$context = get_context_instance(CONTEXT_COURSE, $course->id);
-    		$contextusers = get_role_users('', $context, false, 'u.id, u.firstname, u.lastname, u.email');
+    		$contextusers = get_role_users('', $context, false, 'u.id, u.firstname, u.lastname, u.email', 'u.firstname, u.lastname');
 
 			if (!empty($this->field->param1)) {
 				$selecteds = explode(',', trim($this->field->param1, ','));
